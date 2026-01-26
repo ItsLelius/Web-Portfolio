@@ -1,0 +1,22 @@
+.user-name {
+    font-size: 10px; /* Requested */
+    font-weight: bold;
+    margin: 0;
+}
+
+.location-row {
+    font-size: 12px; /* Requested */
+    color: var(--text-muted);
+}
+
+.job-description {
+    font-size: 14px; /* Requested */
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.btn {
+    font-size: 12px; /* Requested */
+    font-weight: 600;
+    margin-top: -1px;
+}

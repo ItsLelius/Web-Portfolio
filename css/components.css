@@ -1,0 +1,77 @@
+/* Photo Box */
+.photo-box img {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #f3f4f6;
+}
+
+/* Name and Verified Badge */
+.user-name {
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
+.verified-check {
+    width: 20 px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Location and Job Title */
+.location-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.job-description {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 8px 0 16px 0;
+}
+
+/* Buttons */
+.button-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.btn-black {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1.5px solid var(--btn-border);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
