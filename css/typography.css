@@ -5,6 +5,8 @@
   align-items: center;
   gap: 8px;
   margin: 0;
+  user-select: none;
+  cursor: default;
 }
 
 .location-row {
@@ -13,10 +15,14 @@
   gap: 6px;
   font-size: 14px;
   color: var(--muted);
+  user-select: none;
+  cursor: default;
 }
 
 .job-description {
   font-size: 16px;
   font-weight: 500;
   margin: 8px 0 16px;
+  user-select: none;
+  cursor: default;
 }

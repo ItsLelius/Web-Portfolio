@@ -8,3 +8,5 @@
   img.addEventListener('click', () => {
     img.src = 'assets/images/click-pfp.png';
   });
+
+  

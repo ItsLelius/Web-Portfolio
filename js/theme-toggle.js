@@ -1,16 +1,34 @@
-const btn = document.getElementById('theme-btn');
-let isDark = false;
-btn.addEventListener('click', () => {
-  isDark = !isDark;
-  document.body.setAttribute('data-theme', isDark ? 'dark' : 'light');
-  // Update button text/icon if desired
-  const icon = btn.querySelector('svg');
-  if (isDark) {
-    icon.innerHTML = '<path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>';
-    btn.innerHTML = icon.outerHTML + ' Light Mode';
-  } else {
-    icon.innerHTML = '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>';
-    btn.innerHTML = icon.outerHTML + ' Dark Mode';
-  }
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('theme-toggle');
+  const sunIcon = document.getElementById('sun-icon');
+  const moonIcon = document.getElementById('moon-icon');
+  const body = document.body;
 
+  // Check for saved theme preference or default to light mode
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  if (currentTheme === 'dark') {
+    body.classList.add('dark');
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+  } else {
+    body.classList.remove('dark');
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
+  }
+
+  // Toggle theme on button click
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    const isDark = body.classList.contains('dark');
+
+    if (isDark) {
+      sunIcon.style.display = 'none';
+      moonIcon.style.display = 'block';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      sunIcon.style.display = 'block';
+      moonIcon.style.display = 'none';
+      localStorage.setItem('theme', 'light');
+    }
+  });
+});

@@ -3,6 +3,10 @@
   --text: #000;
   --muted: #666;
   --border: #e5e7eb;
+  --dark-bg: #121212;
+  --dark-text: #ffffff;
+  --dark-muted: #d1d5db;
+  --dark-border: #9ca3af;
 }
 
 body {
@@ -10,4 +14,12 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  --bg: var(--dark-bg);
+  --text: var(--dark-text);
+  --muted: var(--dark-muted);
+  --border: var(--dark-border);
 }
