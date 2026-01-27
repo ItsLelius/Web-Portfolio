@@ -56,10 +56,26 @@
   color: #fff;
 }
 
+body.dark .btn-black {
+  background: #ffffff !important; /* Force white background */
+  color: #000000 !important;      /* Force black text */
+  border: none;                   /* Remove the border you had before */
+}
+
+body.dark .btn-black:hover {
+  background-color: #f0f0f0 !important; /* Slight gray on hover */
+}
+
 .btn-outline {  
   background: transparent;
   border: 1.5px solid var(--border);
 }
+
+.btn-outline:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
 
 /* Dark mode button adjustments */
 body.dark .btn-outline {
@@ -69,13 +85,12 @@ body.dark .btn-outline {
 
 body.dark .theme-toggle {
   border-color: #ffffff;
+  color: #ffffff;
 }
 
 /* Theme Toggle Button */
 .theme-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
   width: 40px;
   height: 40px;
   border: 1.5px solid var(--border);
@@ -87,15 +102,18 @@ body.dark .theme-toggle {
   justify-content: center;
   transition: all 0.3s ease;
   user-select: none;
+  flex-shrink: 0;
 }
 
 .theme-toggle:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 body.dark .theme-toggle:hover {
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .theme-toggle svg {
@@ -110,8 +128,8 @@ body.dark .theme-toggle:hover {
   .theme-toggle {
     width: 36px;
     height: 36px;
-    top: -60px;
-    right: 0;
+    top: 1.5rem;
+    right: 1.5rem;
   }
 
   .theme-toggle svg {
