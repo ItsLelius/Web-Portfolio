@@ -7,52 +7,68 @@
     <title>Lelius Lawas - Full-Stack Dev</title>
     <link rel="icon" type="assets/images/Web-pfp.png" href="">
 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/typography.css">
 </head>
 
 <body>
 
-<section class="profile-section animate-fade-in">
+<section class="profile-section">
+  <div class="photo-box">
+    <img src="assets/images/Web-pfp.png" alt="Profile Picture">
+  </div>
 
-    <div class="photo-box">
-        <img src="assets/images/Web-pfp.png" alt="Profile Picture">
+  <div class="profile-info-area">
+    <h1 class="user-name">
+      Lelius Lawas
+       <svg class="verified-check" viewBox="0 0 24 24">
+        <path fill="#3b82f6" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+      </svg>
+    </h1>
+
+    <div class="location-row">
+      <svg class="icon-svg" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-8 11-8 11s-8-6-8-11a8 8 0 1 1 16 0z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      <span>Digos City, Philippines</span>
     </div>
 
-    <div class="profile-info-area">
-        <h1 class="user-name">
-            Lelius Lawas
-            <svg class="verified-check" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#3b82f6"/>
-                <path d="M9 12L11 14L15 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </h1>
-        
-        <div class="location-row">
-            <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span class="location-name">Digos City, Philippines</span>
-        </div>
+    <p class="job-description">
+      Aspiring Full-Stack Developer
+    </p>
 
-        <p class="job-description">Aspiring Full-Stack Developer </p>
-
-        <div class="button-row">
-            <button class="btn btn-black">
-                <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                Schedule a Call
-            </button>
-            <button class="btn btn-outline">
-                <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                Send Email
-            </button>
-            <button class="btn btn-outline">        
-                <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                Join My Community
-            </button>
-        </div>
+    <div class="button-row">
+      <button class="btn btn-black">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar">
+          <path d="M8 2v4"/>
+          <path d="M16 2v4"/>
+          <rect width="18" height="18" x="3" y="4" rx="2"/>
+          <path d="M3 10h18"/>
+        </svg>
+        Schedule a Call
+      </button>
+      <button class="btn btn-outline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+          <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+        </svg>
+        Send Email
+      </button>
+      <button class="btn btn-outline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+          <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+          <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+          <circle cx="9" cy="7" r="4"/>
+        </svg>
+        Join My Community
+      </button>
     </div>
-
-</section>   
+  </div>
+</section>
 
      
 

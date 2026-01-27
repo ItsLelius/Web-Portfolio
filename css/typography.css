@@ -1,22 +1,22 @@
 .user-name {
-    font-size: 10px; /* Requested */
-    font-weight: bold;
-    margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
 }
 
 .location-row {
-    font-size: 12px; /* Requested */
-    color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 .job-description {
-    font-size: 14px; /* Requested */
-    font-weight: 400;
-    margin-top: 4px;
-}
-
-.btn {
-    font-size: 12px; /* Requested */
-    font-weight: 600;
-    margin-top: -1px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0 16px;
 }

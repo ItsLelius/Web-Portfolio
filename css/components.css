@@ -1,77 +1,55 @@
-/* Photo Box */
 .photo-box img {
-    width: 160px;
-    height: 160px;
-    border-radius: 10px;
-    object-fit: cover;
-    background: #f3f4f6;
-}
-
-/* Name and Verified Badge */
-.user-name {
-    font-size: 2rem;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .verified-check {
-    width: 20 px;
-    height: 20px;
-    flex-shrink: 0;
+  width: 25px;
+  height: 25px;
 }
 
-/* Location and Job Title */
-.location-row {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--text-muted);
-    font-size: 12px;
-}
-
-.job-description {
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin: 8px 0 16px 0;
+.icon-svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
 }
 
 /* Buttons */
-.button-row {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-}
-
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px 24px;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.2s, background 0.2s;
-    border: none;
-    font-size: 0.9rem;
-}
-
-.btn-black {
-    background-color: var(--btn-primary-bg);
-    color: var(--btn-primary-text);
-}
-
-.btn-outline {
-    background-color: transparent;
-    color: var(--text-main);
-    border: 1.5px solid var(--btn-border);
+  padding: 8px 14px;   /* smaller */
+  border-radius: 10px;
+  font-weight: 400 ;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+  display: inline-flex; /* Added to align icon and text */
+  align-items: center; /* Added for vertical centering */
+  gap: 8px; /* Added for spacing between icon and text */
+  transition: all 0.3s ease; /* Added for smooth hover transition */
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
+  transform: translateY(-3px); /* Soft rise effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Light gray shadow on bottom */
+}
+
+.btn svg {
+  flex-shrink: 0; /* Prevents icon from shrinking */
+  width: 16px; /* Adjusted size to match font */
+  height: 16px;
+}
+
+.btn-black {
+  background: #000;
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--border);
 }
